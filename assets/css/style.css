@@ -1,0 +1,227 @@
+#titleBox {
+    font-size: 3em;
+    text-align: center;
+    background-color: black;
+    background-image: url("../images/stars.jpg");
+    background-attachment: fixed;
+    background-position: 0px 50%;
+    font-family: magnet;
+    padding: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-color: #af851f;
+}
+#titleBox > h1 {
+    background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 60%, rgba(154,173,184,1) 69%, rgba(224,239,249,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#titleBox > h1 > span{
+    background-image: url("../images/wood.jpg");
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: mesquite;
+    background-size: cover;
+    letter-spacing: 3px;
+    background-position-x: center; 
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#character {
+    margin: auto;
+    margin-top: 50px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #af851f;
+}
+#character > h1 {
+    font-size: large;
+    color: #af851f;
+    width: 100%;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-color: #af851f;
+}
+#enemyH {
+    width: 280px;
+    border-style: solid;
+    background-color: red;
+    height: 10px;
+    border-width: thin;
+    border-color: #af851f;
+}
+
+#playerH {
+    width: 280px;
+    height: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #af851f;
+    background-color: red;
+}
+
+#enemy {
+    margin: auto;
+    margin-top: 50px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #af851f;
+}
+
+#enemy > h1 {
+    font-size: large;
+    color: #af851f;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-color: #af851f;
+    width: 100%;
+}
+#info {
+    border-style: double;
+    border-width: 5px;
+    border-color: #af851f;
+    width: 210px;
+    height: 70px;
+    margin: auto;
+}
+#reset {
+    margin-top: 10px;
+}
+.arena {
+    margin: auto;
+    width: 90%;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+.hero {
+    text-align: center;
+    margin: 25px;
+    font-family: magnet;
+    border-radius: 5%;
+}
+
+.fighters {
+    position: relative;
+    display: -webkit-flex;
+    flex-direction: row;
+    width: 650px;
+    border-style: double;
+    border-radius: 5%;
+    background-color: #470056;
+    border-width: 10px;
+    border-color: #af851f;
+}
+.fighters > span {
+    font-size: large;
+    position: absolute;
+    width: 100%;
+    color: #af851f;
+    top: 5px;
+    left: 0;
+}
+
+.health {
+    margin: 15px;
+}
+
+#container {
+    position: absolute;
+    width: 320px;
+    margin: auto;
+    top: 20px;
+}
+
+#options {
+    margin: 20px;
+}
+
+#options > button {
+    font-family: magnet;
+    font-weight: bold;
+}
+
+.command {
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    align-self: flex-end;
+    float: right;
+    position: relative;
+    color: #af851f;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    border-color: #af851f;
+    border-radius: 100%;
+}
+
+
+.heroBox {
+    color: #ffffff;
+    display: -webkit-flex;
+    font-family: sans-serif;
+}
+
+.pic {
+    border-style: double;
+    border-width: 10px;
+    border-color: #af851f;
+    margin-bottom: 5px;
+}
+
+.app {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px 40%;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: magnet;
+    width: 100vw;
+}
+
+
+.banner {
+    background-color: #666666;
+}
+
+.content {
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 15px;
+    padding-left: 0;
+    font-size: small;
+    text-align: center;
+    color: #ffffff;
+    background-image: url("../images/stars.jpg");
+    background-attachment: fixed;
+    background-position: 0px bottom;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-color: #af851f;
+  }
+
+@font-face {
+    font-family: magnet;
+    src: url("../fonts/MAGNETOB.ttf");
+}
+@font-face {
+    font-family: mesquite;
+    src: url("../fonts/MesquiteStd.otf");
+}
+  /* Media queries */

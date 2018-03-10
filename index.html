@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>the holy grail</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <script src="./assets/javascript/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body class="app">
+    <div class="banner">
+            <div id="titleBox">
+                <h1>The <span>Big</span> Lebowski RPG</h1>
+            </div>
+    </div>
+
+        <div class="content">
+            <div class="heroBox"> 
+                <button id="dude" class="hero" value="theDude"> <p>The Dude</p>
+                    <img class="pic" src="./assets/images/dude.jpg" style="height:100px;" alt="oops">
+                </button>
+                <button id="flea" class="hero" value="flea"> <p>Flea</p>
+                    <img class="pic" src="./assets/images/flea.jpg" style="height:100px;" alt="oops">
+                </button>
+                <button id="walter" class="hero" value="walter"> <p>Walter</p>
+                    <img class="pic" src="./assets/images/walter1.jpg" style="height:100px;" alt="oops">
+                </button>
+                <button id="ferret" class="hero" value="ferret"> <p>Illegal Amphibious Marmot</p>
+                    <img class="pic" src="./assets/images/ferret.jpg" style="height:100px;" alt="oops">
+                </button>
+            </div>
+            <div class="arena">
+                <div class="fighters"> <span id="fightText">choose your character!</span>
+                    <div id="character">
+                        <h1>Player</h1>
+                        <img id="player" src="./assets/images/750161_game_512x512.png" style="width:200px;height:200px;" alt="oops">
+                    </div>
+                    <div id="enemy">
+                        <h1>Defender</h1>
+                        <img id="opponent" src="./assets/images/750161_game_512x512.png" style="width:200px;height:200px;" alt="oops">
+                    </div>
+                </div>
+                <div class="command">
+                    <img  src="./assets/images/bowling-ball.png" style="width:315px;height:315px;" alt="oops">
+                    <div id="container">
+                    <h1>Fight</h1>
+                    <div id="options">
+                        <button id="attack">Attack</button>
+                        <button id="special">Special</button>
+                    </div>
+                        <div class="health"> Player
+                            <div id=playerH></div>
+                        </div>
+                        <div class="health"> Enemy
+                            <div id=enemyH></div>
+                        </div>
+                        <div id="info"></div>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer">@ Copyright 2018 Edward Finley
+    </div>
+
+  </body>
+
+</html>
