@@ -48,6 +48,7 @@ $(document).ready(() => {
         (fight.player.name === '' || fight.enemy.name === '') ? $('#attack, #special').prop('disabled', true) : $('#attack, #special').prop('disabled', false);
         $('#fightText').html('Choose Your Character!')
     }
+
     $('.hero').click( function () {
         if (fight.player.name === '') {
             $('#fightText').html('Choose your first opponent!')
@@ -56,7 +57,6 @@ $(document).ready(() => {
             fight.player.attack = characters[fight.player.name].attack
             $("#player").attr('src', characters[fight.player.name].url)
             $("#player").attr('style', 'height:200px')
-            console.log(characters[fight.player.name].url)
         } else if (fight.player.name !== '' && fight.enemy.name === '') {
             fight.enemy.name = $(this).attr('value');
             fight.enemy.health = characters[fight.enemy.name].health
@@ -88,7 +88,6 @@ $(document).ready(() => {
             $('#fightText').html('Choose your next opponent!')
             fought.number += 1;
         }
-        console.log(fought.number)
         if (fought.number === 4) {
             $('#fightText').html('You Win! Good for you!')
         }
@@ -116,7 +115,6 @@ $(document).ready(() => {
         fight.enemy.health -= fight.player.attack
         fight.player.attack += characters[fight.player.name].attack
         counter ();
-        console.log(fight.player.attack)
         hBar (fight.player.health, characters[fight.player.name].health, '#playerH')
         hBar (fight.enemy.health, characters[fight.enemy.name].health, '#enemyH')
         $('#fightText').html(characters[fight.player.name].whatsYourNameBby + characters[fight.player.name].attackMessage + (fight.player.attack - characters[fight.player.name].attack) + ' damage<br>' + characters[fight.enemy.name].whatsYourNameBby + characters[fight.enemy.name].attackMessage + characters[fight.enemy.name].counter + ' damage')
@@ -139,6 +137,7 @@ $(document).ready(() => {
         win (characters[fight.enemy.name].id)
         lose ();
     })
+
     $('#reset').click(() => {
         fought.names = '';
         fought.number = 0;
@@ -154,8 +153,5 @@ $(document).ready(() => {
         $('#info').html('')
         nGame ();
     })
-
-
-    console.log(characters.theDude)
   })
     
