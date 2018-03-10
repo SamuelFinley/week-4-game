@@ -2,9 +2,10 @@
     font-size: 3em;
     text-align: center;
     background-color: black;
-    background-image: url("../images/stars.jpg");
+    background-image: url("../images/banner.png");
     background-attachment: fixed;
-    background-position: 0px 50%;
+    background-size: 1600px;
+    background-position: center 50%;
     font-family: magnet;
     padding: 20px;
     border-bottom-style: solid;
