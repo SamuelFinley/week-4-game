@@ -35,7 +35,7 @@
 }
 #character {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     border-style: solid;
     border-width: 7px;
     border-color: #af851f;
@@ -68,7 +68,7 @@
 
 #enemy {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     border-style: solid;
     border-width: 7px;
     border-color: #af851f;

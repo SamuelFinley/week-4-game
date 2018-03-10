@@ -21,10 +21,10 @@ $(document).ready(() => {
         },
     }
     const characters = {
-        theDude: new person('#dude', 'The Dude', ' abides', " doesn't like your Eagles music ", 100, 15, 6, './assets/images/dude.jpg'),
-        flea: new person('#flea', 'Flea', ' uses nihilism', ' attacks with scissors ', 80, 8, 4, './assets/images/flea.jpg'),
+        theDude: new person('#dude', 'The Dude', ' abides ', " doesn't like your Eagles music ", 100, 15, 6, './assets/images/dude.jpg'),
+        flea: new person('#flea', 'Flea', ' uses nihilism ', ' attacks with scissors ', 80, 8, 4, './assets/images/flea.jpg'),
         ferret: new person ('#ferret', 'Illegal Amphibious Marmot', ' projects thoughts of crime ', ' scratches', 70, 30, 8, './assets/images/ferret.jpg'),
-        walter: new person('#walter', 'Walter', ' bites off an ear', ' hurls bowling ball ', 150, 20, 8, './assets/images/walter1.jpg')
+        walter: new person('#walter', 'Walter', ' bites off an ear ', ' hurls bowling ball ', 150, 20, 8, './assets/images/walter1.jpg')
     }
 
     window.onload = nGame ();
