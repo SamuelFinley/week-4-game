@@ -78,6 +78,7 @@ $(document).ready(() => {
 
     function win (id) {
         if (fight.enemy.health <= 0) {
+            $('#attack, #special').prop('disabled', true)
             $('.hero').prop('disabled', false)
             if (fought.names === '') { 
                 (fought.names = id)  
@@ -151,6 +152,7 @@ $(document).ready(() => {
         $('#player, #opponent').attr('src', './assets/images/750161_game_512x512.png')
         $('#player, #opponent').attr('style', 'height:200px')
         $('#info').html('')
+        $('.hero').prop('disabled', false)
         nGame ();
     })
   })
